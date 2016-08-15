@@ -14,6 +14,9 @@
 		C02916D31D61581B00944DFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02916D11D61581B00944DFF /* LaunchScreen.storyboard */; };
 		C02916DE1D61581B00944DFF /* SlideMenuDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02916DD1D61581B00944DFF /* SlideMenuDemoTests.swift */; };
 		C02916E91D61581B00944DFF /* SlideMenuDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02916E81D61581B00944DFF /* SlideMenuDemoUITests.swift */; };
+		C02916F71D61583200944DFF /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02916F61D61583200944DFF /* ViewController2.swift */; };
+		C02916FD1D615B3500944DFF /* NKTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02916FA1D615B3500944DFF /* NKTransitionAnimator.swift */; };
+		C02916FE1D615B3500944DFF /* NKTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02916FB1D615B3500944DFF /* NKTransitionDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		C02916E41D61581B00944DFF /* SlideMenuDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideMenuDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02916E81D61581B00944DFF /* SlideMenuDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuDemoUITests.swift; sourceTree = "<group>"; };
 		C02916EA1D61581B00944DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C02916F61D61583200944DFF /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		C02916FA1D615B3500944DFF /* NKTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKTransitionAnimator.swift; sourceTree = "<group>"; };
+		C02916FB1D615B3500944DFF /* NKTransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKTransitionDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,10 @@
 		C02916C71D61581B00944DFF /* SlideMenuDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C02916F81D615B3500944DFF /* NKSlideMenuTransition */,
 				C02916C81D61581B00944DFF /* AppDelegate.swift */,
 				C02916CA1D61581B00944DFF /* ViewController.swift */,
+				C02916F61D61583200944DFF /* ViewController2.swift */,
 				C02916CC1D61581B00944DFF /* Main.storyboard */,
 				C02916CF1D61581B00944DFF /* Assets.xcassets */,
 				C02916D11D61581B00944DFF /* LaunchScreen.storyboard */,
@@ -124,6 +132,15 @@
 			);
 			path = SlideMenuDemoUITests;
 			sourceTree = "<group>";
+		};
+		C02916F81D615B3500944DFF /* NKSlideMenuTransition */ = {
+			isa = PBXGroup;
+			children = (
+				C02916FA1D615B3500944DFF /* NKTransitionAnimator.swift */,
+				C02916FB1D615B3500944DFF /* NKTransitionDelegate.swift */,
+			);
+			path = NKSlideMenuTransition;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -256,8 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C02916FE1D615B3500944DFF /* NKTransitionDelegate.swift in Sources */,
 				C02916CB1D61581B00944DFF /* ViewController.swift in Sources */,
 				C02916C91D61581B00944DFF /* AppDelegate.swift in Sources */,
+				C02916F71D61583200944DFF /* ViewController2.swift in Sources */,
+				C02916FD1D615B3500944DFF /* NKTransitionAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +504,7 @@
 				C02916EF1D61581B00944DFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C02916F01D61581B00944DFF /* Build configuration list for PBXNativeTarget "SlideMenuDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +513,7 @@
 				C02916F21D61581B00944DFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C02916F31D61581B00944DFF /* Build configuration list for PBXNativeTarget "SlideMenuDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +522,7 @@
 				C02916F51D61581B00944DFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

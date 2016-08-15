@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ViewController2.swift
 //  SlideMenuDemo
 //
 //  Created by NKJay on 8/15/16.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
-    var delegate:NKTransitionDelegate? = nil
+class ViewController2: UIViewController {
     
     private lazy var button:UIButton = {
         let button = UIButton()
-        button.setTitle("Click here", forState: .Normal)
+        button.setTitle("back", forState: .Normal)
         button.setTitleColor(UIColor.blackColor(), forState: .Normal)
         button.addTarget(self, action: #selector(ViewController.buttonDidClick), forControlEvents: .TouchUpInside)
         
@@ -26,19 +24,13 @@ class ViewController: UIViewController {
     }()
     
     func buttonDidClick() {
-        let viewController = ViewController2()
-//        delegate?.setTransitionArgument(400, scale: 0.5, transitionDuration: 0.5)
-        viewController.transitioningDelegate = delegate
-        presentViewController(viewController, animated: true, completion: nil)
+        dismissViewControllerAnimated(true, completion: nil)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.addSubview(button)
-        
-        delegate = NKTransitionDelegate(targetEdge: UIRectEdge.Right)
     }
-    
-}
 
+}

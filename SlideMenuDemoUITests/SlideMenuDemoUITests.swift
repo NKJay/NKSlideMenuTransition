@@ -2,8 +2,8 @@
 //  SlideMenuDemoUITests.swift
 //  SlideMenuDemoUITests
 //
-//  Created by Geetion on 8/15/16.
-//  Copyright © 2016 Geetion. All rights reserved.
+//  Created by NKJay on 8/15/16.
+//  Copyright © 2016 NKJay. All rights reserved.
 //
 
 import XCTest
