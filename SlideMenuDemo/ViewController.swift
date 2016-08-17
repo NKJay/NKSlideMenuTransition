@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         
         view.addSubview(button)
         
-        delegate = NKTransitionDelegate(targetEdge: UIRectEdge.Right)
+        delegate = NKTransitionDelegate(targetEdge: UIRectEdge.Left)
     }
     
 }
